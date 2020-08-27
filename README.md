@@ -1,56 +1,54 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod-redirect-0.herokuapp.com/)
 
-# Capitalisation de noms de pays
+# Carré et racine carrée
 
 Avant de commencer. Consulter les instructions à suivre dans [instructions.md](instructions.md)
 
 ## Objectif
 
-Modifier les casses de noms de pays afin que:
-* Les mots de liaisons (ex.: and) soient en casses minuscules
-* Les premières lettres de noms soient en casses majuscules
+Calculer la racine carrée et le carré des nombres.
 
 ### Exemple
 ```python
-print(capitaliser_pays('antigua ANd barbuda'))
+print(f"Square root: {square_root(4)}, square: {square(4)}")
 ```
-Antigua and Barbuda
+Square root: 2, square: 16
 
 ### À compléter
-Vous devez compléter la fonction suivante du fichier [exercice.py](exercice.py).
+Vous devez compléter les fonctions suivantes du fichier [exercice.py](exercice.py).
 
 ```python
-def capitaliser_pays(nom):
-    #TODO completer la fonction
-    return nom
+def square_root(number: int) -> float:
+    # TODO completer la fonction
+    return square_rooted
+    
+def square(number: int) -> int:
+    # TODO completer la fonction
+    return squared
 ```
 
 ## Connaissances utiles
 
-### Changement de casse
+### Exponentiation
 ```python
-chaine = "Hello, World!"
-print(chaine.upper())
-print(chaine.lower())
-print(chaine.capitalize())
-print(chaine.swapcase())
-```
-HELLO, WORLD!<br>
-hello, world!<br>
-Hello, world!<br>
-hELLO, wORLD!<br>
+import math
 
-### Remplacement de sous-chaîne (substring)
-```python
-print(chaine.replace('Hello', 'Bonjour'))
-```
-Bonjour, World!<br>
+math.pow(2, 3)
+2 ** 4
 
-### Trouver une sous-chaîne ou un charactère
-```python
-# retourne le premier indice trouvé
-print(chaine.find('o'))
-print(chaine.find('World'))
 ```
-4<br>
-7
+8.0<br>
+16<br>
+
+### Racine carré
+```python
+import math
+
+math.sqrt(9)
+math.pow(100, 1/2)
+4 ** (1/2)
+
+```
+3.0<br>
+10.0<br>
+2.0<br>
