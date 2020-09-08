@@ -24,7 +24,7 @@ class TestExercice(unittest.TestCase):
         )
 
     def test_square_root(self) -> None:
-        output_exo = list(map(exercice.square, self.numbers))
+        output_exo = list(map(exercice.square_root, self.numbers))
         outpur_correct = list(map(lambda x: math.sqrt(x), self.numbers))
         
         self.assertListEqual(
